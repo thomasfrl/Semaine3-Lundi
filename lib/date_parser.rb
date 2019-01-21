@@ -123,11 +123,16 @@ class DateParser
 				year += 1
 				month = 1
 			end
-
-			supe = Time.new(year,month,day) + hour
-			binding.pry
-			return supe
+			@year = year
+			@month = month
+			@day = day
+			@hour = hour
+			return Time.new(year,month,day) + hour
 		end
+	end
+
+	def to_s
+		(Time.new(@year,@month,@day) + @hour).to_s
 	end
 end
 =begin

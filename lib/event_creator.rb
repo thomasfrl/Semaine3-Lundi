@@ -12,7 +12,7 @@ class EventCreator
 		puts
 		puts "Super, quand aura-t-il lieu ?"
 		print "> "
-		start_date = DateParser.new(gets.chomp)
+		start_date = (DateParser.new(gets.chomp)).to_s
 		puts
 		puts "Au top, combien de temps en minutes va-t-il durer ?"
 		print "> "

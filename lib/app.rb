@@ -13,10 +13,10 @@ mathiieru = User.new("encore.mail")
 liste = User.all
 #puts liste
 
-fete = Event.new("2019-01-13 09:00",10,"bidule",liste)
-fete2 = Event.new("2019-01-06 08:30",10,"truc",liste)
-fete4 = Event.new("2019-01-30 11:15",10,"machin",liste)
-fete3 = Event.new("2019-01-24 09:00",10,"chose",liste)
+fete = Event.new("2019-02-13 09:00",10,"bidule",liste)
+fete2 = Event.new("2019-02-08 08:30",10,"truc",liste)
+fete4 = Event.new("2019-02-16 11:15",10,"machin",liste)
+fete3 = Event.new("2019-02-24 09:00",10,"chose",liste)
 
 #puts fete
 #puts "Voici l'email du premier attendee de l'événement : #{fete.attendees.first.email}"
@@ -27,6 +27,6 @@ fete3 = Event.new("2019-01-24 09:00",10,"chose",liste)
 
 #puts super_fete
 
-calendrier = CalendarDisplayer.new([fete,fete2,fete3,fete4],"2019-01-13 09:00")
+calendrier = CalendarDisplayer.new([fete,fete2,fete3,fete4],"2019-02-13 09:00")
 
-calendrier.display
+puts calendrier
