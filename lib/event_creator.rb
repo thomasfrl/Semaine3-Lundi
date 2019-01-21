@@ -21,6 +21,6 @@ class EventCreator
 		print "> "
 		attendees = gets.chomp.delete(" ").split(";").map { |attendee| User.new(attendee) }
 		puts "Super, c'est noté, à bientôt !"
-		return Event.new(start_date,lenght,title,attendees)
+		puts Event.new(start_date,lenght,title,attendees)
 	end
 end
