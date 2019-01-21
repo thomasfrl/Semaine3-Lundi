@@ -1,6 +1,7 @@
 require_relative './user.rb'
 require_relative './event.rb'
 require 'time'
+require_relative './date_parser.rb'
 
 class EventCreator
 	def initialize()
@@ -11,7 +12,7 @@ class EventCreator
 		puts
 		puts "Super, quand aura-t-il lieu ?"
 		print "> "
-		start_date = gets.chomp
+		start_date = DateParser.new(gets.chomp)
 		puts
 		puts "Au top, combien de temps en minutes va-t-il durer ?"
 		print "> "

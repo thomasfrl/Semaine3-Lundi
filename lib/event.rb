@@ -1,5 +1,4 @@
 require_relative './user.rb'
-require 'time'
 
 class Event
 	attr_accessor :start_date, :lenght, :title, :attendees
@@ -16,7 +15,7 @@ class Event
 	end	
 
 	def end_date
-		@start_date + 30*60
+		@start_date + @lenght*60
 	end
 
 	def is_past
@@ -39,6 +38,8 @@ class Event
   	attendees.each {|attendee| list_attendees += attendee.email + " "}
   	puts ("Invités : #{list_attendees}")
   end
+
+  
 
 end
 
