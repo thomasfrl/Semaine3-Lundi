@@ -1,5 +1,5 @@
 require_relative '../lib/user'
-
+#jsute un commentaire
 describe User do
 
   before(:each) do
